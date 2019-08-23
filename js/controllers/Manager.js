@@ -19,6 +19,8 @@ class Manager {
         for (let i=0; i < daily.length; i++) {
             this.days.push(new DailyWeather(daily[i]));
         }
+        this.pageView = new WeatherComponent(this.days);
+        
     }
     onError(){
 
